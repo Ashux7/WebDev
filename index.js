@@ -26,9 +26,15 @@ document.getElementById("entre").onclick=function(){
     for( let k = 0; k < resArr.length ; k++){
         cgcred += resArr[k][1];
     }
-    console.log(cgsum,cgcred);
-    const cgp = cgsum/cgcred;
-    console.log(cgp,cgsum/cgcred);
-    alert(`Your CG is ${cgp}`);
     
+    const btn = document.createElement("button");
+    btn.textContent = "Ready for Result?🥶";
+    btn.id = "readyres";
+    btn.style="text-align: centre;";    
+    btn.onclick = () => alert(`Your CGPA is ${cgsum/cgcred}`);
+    document.body.appendChild(btn);
+    
+    document.getElementById("readyres").onclick = function(){
+        alert(`Your GPA is ${cgsum/cgcred}`)
+    }
 }
