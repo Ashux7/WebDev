@@ -30,8 +30,5 @@ document.getElementById("entre").onclick=function(){
     const cgp = cgsum/cgcred;
     console.log(cgp,cgsum/cgcred);
     alert(`Your CG is ${cgp}`);
-    // const btn = document.createElement("button");
-    // btn.textContent = "Ready for Result?";
-    // btn.onclick = () => alert(`Your CGPA is ${cgsum/cgcred}`);
-    // document.body.appendChild(btn);
+    
 }
