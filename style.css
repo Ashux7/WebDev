@@ -24,3 +24,9 @@ body{
 #numberinput{
     text-align: center;
 }
+
+#readyres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

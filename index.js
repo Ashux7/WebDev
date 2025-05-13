@@ -5,15 +5,17 @@ let cgcred=0;
 document.getElementById("entre").onclick=function(){
 
     let resArr = [];
-
     resArr = [
         [document.getElementById('c1Grade').value, parseFloat(document.getElementById('c1Credit').value)] , 
         [document.getElementById('c2Grade').value, parseFloat(document.getElementById('c2Credit').value)] , 
         [document.getElementById('c3Grade').value, parseFloat(document.getElementById('c3Credit').value)] ,
         [document.getElementById('c4Grade').value, parseFloat(document.getElementById('c4Credit').value)] ,
-        [document.getElementById('c5Grade').value, parseFloat(document.getElementById('c5Credit').value)]
+        [document.getElementById('c5Grade').value, parseFloat(document.getElementById('c5Credit').value)] ,
+        [document.getElementById('c6Grade').value, parseFloat(document.getElementById('c6Credit').value)]
     ]
-    
+    // for(let x = 0; x< resArr.length;x++){
+    //     if(!resArr[x][0])
+    // }
     
     for (let j = 0; j < resArr.length; j++) {
         console.log(resArr[j][0]);
@@ -29,8 +31,7 @@ document.getElementById("entre").onclick=function(){
     
     const btn = document.createElement("button");
     btn.textContent = "Ready for Result?🥶";
-    btn.id = "readyres";
-    btn.style="text-align: centre;";    
+    btn.id = "readyres";    
     btn.onclick = () => alert(`Your CGPA is ${cgsum/cgcred}`);
     document.body.appendChild(btn);
     
