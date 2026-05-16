@@ -1,32 +1,47 @@
-
-body{
+html {
     padding: 0;
     margin: 0;
+    background: -webkit-repeating-linear-gradient(135deg, #FFA500, #FF6F61, #FF69B4);
 }
 
-#heading{
+#heading {
     color: white;
-    text-align: center;   
-    background-color: black;
-    margin: 0%;
+    text-align: center;
+    background-color: rgba(0, 0, 0,0.5);
+    margin: -10px;
     padding: 0%;
-    font-size:200%;
+    font-size: 200%;
     font-family: inherit;
 }
 
-#bruh{
-    text-align: center;
-    background-color: antiquewhite;
-    border-color: black;
-    font-size: larger;
-}
 
-#numberinput{
+#numberinput {
     text-align: center;
 }
 
-#readyres{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#GradeCreditLable{
+    text-align: center;
+    margin: auto;
+    top: -10px;
+}
+
+#cH3{
+    margin: auto;
+    position: relative;
+    right: -90px;
+    top: -33px;
+    bottom: auto;
+}
+
+#gH3{
+    margin: auto;
+    position: relative;
+    left: -90px;
+    top: -10px;
+    bottom: auto;
+}
+
+#numberinput {
+    position: relative;
+    top: -20px;
 }
